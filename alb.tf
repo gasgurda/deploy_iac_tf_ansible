@@ -1,5 +1,5 @@
 resource "aws_lb" "application-lb" {
-  provider = "aws.region-master"
+  provider = aws.region-master
   name = "jenkins-lb"
   internal = false
   load_balancer_type = "application"
