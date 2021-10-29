@@ -30,6 +30,9 @@
         state: present
         key: https://pkg.jenkins.io/redhat/jenkins.io.key
 
+    - name: Install epel repo for AMZ Linux
+      shell: amazon-linux-extras install epel -y
+
     - name: install Jenkins
       yum:
         name: jenkins
